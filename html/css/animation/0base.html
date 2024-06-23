@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes go {
+        from {
+          height: 80px; /* end */
+        }
+        to {
+          height: 160px; /* end */
+        }
+      }
+      @keyframes back {
+        from {
+          height: 160px; /* end */
+        }
+        to {
+          height: 80px; /* end */
+        }
+      }
+      .goAnimate {
+        animation: go 1s linear forwards;
+      }
+      .backAnimate {
+        animation: back 1s linear forwards;
+      }
+
+      [id="subject"] {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #ced4da;
+        color: #495057;
+        cursor: pointer;
+      }
+
+      .body {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div id="subject" onclick="clickTostart()">click me!</div>
+  </body>
+  <script>
+    function clickTostart() {
+      console.log("clickTostart", document.getElementById("subject").className);
+      if (document.getElementById("subject").className == "goAnimate") {
+        document.getElementById("subject").className = "backAnimate ";
+      } else {
+        document.getElementById("subject").className = "goAnimate";
+      }
+    }
+  </script>
+</html>
