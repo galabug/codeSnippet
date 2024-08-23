@@ -1,3 +1,8 @@
+# openJDK 下载 - 访问 Adoptium（由 Eclipse 基金会管理）的网站
+
+目前推荐获取高质量 OpenJDK 发行版的地方：
+https://adoptium.net/
+
 # 环境变量配置
 
 JAVA_HOME
