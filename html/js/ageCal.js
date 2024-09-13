@@ -94,24 +94,25 @@ function calculateFemaleRetirement55(year, month) {
 }
 
 // 示例调用
-// for (let y = 1964; y <= 1977; y++) {
-//   for (let m = 1; m <= 12; m++) {
-//     let r = calculateMaleRetirement(y, m)
-//     console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
-//   }
-// }
+console.log('男职工退休年龄计算--->')
+for (let y = 1964; y <= 1977; y++) {
+  for (let m = 1; m <= 12; m++) {
+    let r = calculateMaleRetirement(y, m)
+    console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
+  }
+}
+console.log('原法定退休年龄为 55 周岁的女职工退休年龄计算--->')
+for (let y = 1969; y <= 1982; y++) {
+  for (let m = 1; m <= 12; m++) {
+    let r = calculateFemaleRetirement55(y, m)
+    console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
+  }
+}
 
-// for (let y = 1969; y <= 1982; y++) {
-//   for (let m = 1; m <= 12; m++) {
-//     let r = calculateFemaleRetirement55(y, m)
-//     console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
-//   }
-// }
-
-
-// for (let y = 1974; y <= 1985; y++) {
-//   for (let m = 1; m <= 12; m++) {
-//     let r = calculateFemaleRetirement50(y, m)
-//     console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
-//   }
-// }
+console.log('原法定退休年龄为 50 周岁的女职工退休年龄计算--->')
+for (let y = 1974; y <= 1985; y++) {
+  for (let m = 1; m <= 12; m++) {
+    let r = calculateFemaleRetirement50(y, m)
+    console.log(y + '-' + m, r.retirementAge, r.retirementTime, r.delayMonths)
+  }
+}
