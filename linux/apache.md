@@ -25,3 +25,10 @@ ProxyPassReverse /perbank http://197.68.19.58:8811/perbank
 /home/mbapache/apache2/bin/httpd -k restart
 /home/webapache/apache2/bin/httpd -f /home/webapache/apache2/conf/httpd.conf -k restart
 ```
+
+- 查看已经加载的模块
+
+```
+apachectl -M
+apachectl -M | grep rewrite
+```
