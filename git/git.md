@@ -1,3 +1,7 @@
+  git config --global user.email "153454219@qq.com"
+  git config --global user.name "galabug"
+
+
 ```
 #切换到任意非test master分支分支
 git checkout dev
